@@ -516,7 +516,7 @@ section {
 
 .differentiator-card {
     padding: 32px;
-    background-color: rgba(26, 26, 26, 0.05);
+    background-color: #f5f5f5;
     border-radius: var(--border-radius);
     transition: transform 0.3s ease;
 }
@@ -533,7 +533,52 @@ section {
 .differentiator-card h3 {
     font-size: 24px;
     margin-bottom: 16px;
-    color: var(--accent-color);
+    color: #FF6B3D;
+}
+
+.differentiator-card p {
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .differentiators-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        width: 85%;
+        margin: 2rem auto 0;
+    }
+
+    .differentiator-card {
+        background-color: #f5f5f5;
+        padding: 2rem;
+        border-radius: 16px;
+        text-align: left;
+    }
+
+    .differentiator-card h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: #FF6B3D;
+    }
+
+    .differentiator-icon {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+
+    .differentiator-card p {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .differentiators-grid {
+        width: 90%;
+    }
 }
 
 /* Tech Stack */
