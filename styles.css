@@ -315,6 +315,12 @@ section:not(:last-child)::after {
     overflow: hidden;
     background-color: var(--primary-color);
     color: var(--text-color);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    box-sizing: border-box;
 }
 
 .hero .container {
@@ -702,6 +708,12 @@ section:not(:last-child)::after {
 .contact {
     position: relative;
     overflow: hidden;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    padding-left: calc(50vw - 50%);
+    padding-right: calc(50vw - 50%);
+    box-sizing: border-box;
 }
 
 .contact-decoration {
